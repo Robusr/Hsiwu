@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/Make-FDM_3D_打印-f57c00" alt="FDM 3D打印">
   <img src="https://img.shields.io/badge/控制-纯模拟-f0c040" alt="纯模拟控制">
   <br>
-  <a href="#中文版本">中文版本</a> | <a href="#english">English</a>
+  <a href="./README.zh-CN.md">中文版本</a> | <a href="./README.md">English</a>
 </p>
 
 ---
