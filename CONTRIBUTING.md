@@ -1,5 +1,9 @@
 # Contributing to Hsiwu
 
+<p align="right">
+  <a href="./CONTRIBUTING.zh-CN.md">中文版本</a>
+</p>
+
 Thank you for your interest in contributing to **Hsiwu**, the MCU-less analog
 biomimetic bat flapping-wing robot!
 

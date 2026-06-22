@@ -14,7 +14,6 @@
   <a href="./LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/SolidWorks-2025-e63946?logo=dassault-systemes&logoColor=white" alt="SolidWorks 2025">
   <img src="https://img.shields.io/badge/Altium_Designer-2025-00a0e3?logo=altium-designer&logoColor=white" alt="Altium Designer 2025">
-  <img src="https://img.shields.io/badge/PCB-EasyEDA-5588ff" alt="EasyEDA">
   <img src="https://img.shields.io/badge/Make-FDM_3D_Print-f57c00" alt="FDM 3D Printing">
   <img src="https://img.shields.io/badge/Control-Pure_Analog-f0c040" alt="Pure Analog Control">
   <br>
@@ -184,7 +183,8 @@ HSIWU/
 ├── .gitignore                   # CAD/EDA/3D-printing-aware ignore rules
 ├── .gitattributes               # Binary/text handling & diff configuration
 ├── CHANGELOG.md                 # Version history (Keep a Changelog format)
-├── CONTRIBUTING.md              # Contributor guidelines
+├── CONTRIBUTING.md              # Contributor guidelines (English)
+├── CONTRIBUTING.zh-CN.md        #   中文贡献者指南
 ├── LICENSE.md                   # MIT License
 ├── README.md                    # Project overview (English)
 └── README.zh-CN.md              # 项目概览（中文）
