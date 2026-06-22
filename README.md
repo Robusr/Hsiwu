@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/Make-FDM_3D_Print-f57c00" alt="FDM 3D Printing">
   <img src="https://img.shields.io/badge/Control-Pure_Analog-f0c040" alt="Pure Analog Control">
   <br>
-  <a href="./README.zh-CN.md">中文版本</a>
+  <a href="./README.zh-CN.md">中文版本</a> | <a href="./README.md">English</a>
 </p>
 
 ---
