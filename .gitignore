@@ -1,0 +1,141 @@
+# =============================================================================
+# Hsiwu — .gitignore
+# MCU-less Analog Biomimetic Bat Flapping-Wing Robot
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# SolidWorks — temporary & auto-generated
+# ---------------------------------------------------------------------------
+~$*.SLD*
+*.lck
+*_bak.SLD*
+*.sldback
+*.log.1
+*.log.2
+*.swj
+*.std
+~$*.sld*
+swxjournal/
+
+# SolidWorks visualisation & thumbnail caches
+*.cwr
+Thumbs.db
+$Recycle.Bin/
+
+# ---------------------------------------------------------------------------
+# Altium Designer — output & project temps
+# ---------------------------------------------------------------------------
+*.PrjPcbStructure
+*.PrjPCBStructureZoominfo
+*.LOG
+*.schdocpreview
+*.pcbdocpreview
+__Previews/
+History/
+Project\ Logs\ for*/
+Project\ Outputs\ for*/
+# Exclude Altium-generated Gerber/NC drill if you already publish under output/
+# electronics/source/Altium Designer/Project Outputs for*/
+# electronics/source/Altium Designer/Generated/
+
+# ---------------------------------------------------------------------------
+# EasyEDA / LCEDA — temp & local config
+# ---------------------------------------------------------------------------
+*.eprj2.bak
+/lceda-backup/
+
+# ---------------------------------------------------------------------------
+# KiCad (in case the project adds KiCad source in the future)
+# ---------------------------------------------------------------------------
+*.kicad_prl
+*.sch-bak
+*.pcb-bak
+*-backups/
+*.zip
+*-cache.lib
+fp-info-cache
+*-rescue.lib
+*-rescue.dcm
+*-rescue.pro
+*-rescue.sch
+
+# ---------------------------------------------------------------------------
+# 3D printing — sliced / intermediate files
+# ---------------------------------------------------------------------------
+*.gcode
+*.gco
+~*.stl
+~*.step
+~*.stp
+
+# ---------------------------------------------------------------------------
+# Simulation & analysis outputs
+# ---------------------------------------------------------------------------
+*.cpa
+*.plt
+*.dat
+*.op2
+*.f06
+*.out
+*.simlog
+
+# ---------------------------------------------------------------------------
+# OS-generated
+# ---------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+*.kate-swp
+*.swp
+*.swo
+*~
+
+# ---------------------------------------------------------------------------
+# IDE / Editor
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# ---------------------------------------------------------------------------
+# Python (for any helper scripts)
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+
+# ---------------------------------------------------------------------------
+# Archives — keep only the canonical source files; ignore manual zips
+# ---------------------------------------------------------------------------
+*.7z
+*.rar
+# *.zip — allowed (EasyEDA / Gerber archives are .zip)
+
+# ---------------------------------------------------------------------------
+# Media — raw / unprocessed
+# ---------------------------------------------------------------------------
+*.CR2
+*.NEF
+*.ARW
+*.dng
+media/photos/raw/
+media/videos/raw/
+
+# ---------------------------------------------------------------------------
+# Local personal notes & overrides
+# ---------------------------------------------------------------------------
+TODO.local
+notes*.md
+scratch/
+*.private.*

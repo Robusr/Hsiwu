@@ -1,0 +1,199 @@
+# =============================================================================
+# Hsiwu — .gitattributes
+# Normalise line endings and mark binary/export files for a hardware project
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# Auto-detect text files, normalise to LF on check-in
+# ---------------------------------------------------------------------------
+* text=auto
+
+# ---------------------------------------------------------------------------
+# Source code & scripts — LF
+# ---------------------------------------------------------------------------
+*.py       text eol=lf
+*.js       text eol=lf
+*.ts       text eol=lf
+*.json     text eol=lf
+*.yaml     text eol=lf
+*.yml      text eol=lf
+*.toml     text eol=lf
+*.cfg      text eol=lf
+*.ini      text eol=lf
+*.sh       text eol=lf
+*.bash     text eol=lf
+Makefile   text eol=lf
+
+# ---------------------------------------------------------------------------
+# Windows-specific scripts — CRLF
+# ---------------------------------------------------------------------------
+*.bat      text eol=crlf
+*.cmd      text eol=crlf
+*.ps1      text eol=crlf
+
+# ---------------------------------------------------------------------------
+# Markdown & documentation — LF, diffable
+# ---------------------------------------------------------------------------
+*.md       text eol=lf diff=markdown
+*.rst      text eol=lf
+*.tex      text eol=lf
+*.txt      text eol=lf
+CHANGELOG  text eol=lf
+LICENSE    text eol=lf
+
+# ---------------------------------------------------------------------------
+# CSV / TSV / pick-and-place — text, LF
+# ---------------------------------------------------------------------------
+*.csv      text eol=lf
+*.tsv      text eol=lf
+
+# ---------------------------------------------------------------------------
+# KiCad source files — have a text-friendly structure but store as-is
+# ---------------------------------------------------------------------------
+*.sch      text eol=lf
+*.kicad_sch text eol=lf
+*.kicad_pcb text eol=lf
+*.kicad_pro text eol=lf
+*.kicad_mod text eol=lf
+*.kicad_dru text eol=lf
+*.kicad_wks text eol=lf
+*.net      text eol=lf
+
+# ---------------------------------------------------------------------------
+# Gerber & fabrication outputs — binary, never diff
+# ---------------------------------------------------------------------------
+*.GTL      binary
+*.GTO      binary
+*.GTS      binary
+*.GTP      binary
+*.GBL      binary
+*.GBO      binary
+*.GBS      binary
+*.GBP      binary
+*.GKO      binary
+*.GDD      binary
+*.GDL      binary
+*.DRL      binary
+*.TXT      binary
+*.gbr      binary
+*.gbl      binary
+*.gtl      binary
+*.gto      binary
+*.gts      binary
+*.gbs      binary
+*.gko      binary
+*.drl      binary
+*.gm1      binary
+
+# ---------------------------------------------------------------------------
+# SolidWorks — binary CAD files
+# ---------------------------------------------------------------------------
+*.SLDPRT   binary
+*.SLDASM   binary
+*.SLDDRW   binary
+*.SLDLFP   binary
+*.sldprt   binary
+*.sldasm   binary
+*.slddrw   binary
+
+# ---------------------------------------------------------------------------
+# EasyEDA / Altium source — mixed, treat as binary to be safe
+# ---------------------------------------------------------------------------
+*.eprj2    binary
+*.schdoc   binary
+*.pcbdoc   binary
+*.outjob   binary
+
+# ---------------------------------------------------------------------------
+# STEP & STL — binary CAD interchange
+# ---------------------------------------------------------------------------
+*.STEP     binary
+*.STP      binary
+*.step     binary
+*.stp      binary
+*.STL      binary
+*.stl      binary
+
+# ---------------------------------------------------------------------------
+# Images — binary
+# ---------------------------------------------------------------------------
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.gif      binary
+*.bmp      binary
+*.tiff     binary
+*.webp     binary
+*.svg      text eol=lf
+
+# ---------------------------------------------------------------------------
+# Video — binary
+# ---------------------------------------------------------------------------
+*.mp4      binary
+*.webm     binary
+*.mov      binary
+*.avi      binary
+
+# ---------------------------------------------------------------------------
+# Audio — binary
+# ---------------------------------------------------------------------------
+*.mp3      binary
+*.wav      binary
+*.ogg      binary
+
+# ---------------------------------------------------------------------------
+# PDF — binary
+# ---------------------------------------------------------------------------
+*.pdf      binary
+
+# ---------------------------------------------------------------------------
+# Office / XLSX — binary
+# ---------------------------------------------------------------------------
+*.xlsx     binary
+*.xls      binary
+*.docx     binary
+*.doc      binary
+*.pptx     binary
+*.ppt      binary
+
+# ---------------------------------------------------------------------------
+# Archives — binary
+# ---------------------------------------------------------------------------
+*.zip      binary
+*.gz       binary
+*.tar      binary
+
+# ---------------------------------------------------------------------------
+# Fonts — binary
+# ---------------------------------------------------------------------------
+*.ttf      binary
+*.otf      binary
+*.woff     binary
+*.woff2    binary
+
+# ---------------------------------------------------------------------------
+# Diff & merge configuration
+# ---------------------------------------------------------------------------
+# SolidWorks files — no meaningful diff; don't try
+*.sld*     -diff -merge
+
+# Gerber files — no meaningful diff
+*.g*       -diff -merge linguist-generated=true
+
+# Images — no diff
+*.png      -diff -merge
+*.jpg      -diff -merge
+*.jpeg     -diff -merge
+*.gif      -diff -merge
+
+# PDF — no diff
+*.pdf      -diff -merge
+
+# Office — no diff
+*.xlsx     -diff -merge
+*.xls      -diff -merge
+*.docx     -diff -merge
+
+# Binary CAD — no diff
+*.STEP     -diff -merge linguist-generated=true
+*.STL      -diff -merge linguist-generated=true

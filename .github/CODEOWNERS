@@ -1,0 +1,25 @@
+# Hsiwu — Code Owners
+# Automatically request review from the appropriate domain experts.
+
+# Global — project maintainer(s)
+*       @Robusr
+
+# Electronics (PCB, schematic, Gerber, BOM)
+/electronics/          @Robusr
+/BOM/                  @Robusr
+
+# Mechanical (CAD, STEP, STL)
+/mechanical/           @Robusr
+
+# Documentation
+/docs/                 @Robusr
+README.md              @Robusr
+README.zh-CN.md        @Robusr
+CHANGELOG.md           @Robusr
+CONTRIBUTING.md        @Robusr
+LICENSE.md             @Robusr
+
+# CI / Repo configuration
+/.github/              @Robusr
+.gitignore             @Robusr
+.gitattributes         @Robusr
